@@ -2,7 +2,7 @@
 Use-AzureRmProfile -Profile 2017-03-09-profile -Force
 Install-Module -Name AzureStack -RequiredVersion 1.2.10
 
-
+#Login to ADFS
 Set-Location -Path 'C:\AzureStack-Tools-brbartle-registerwithmodule'
 Get-ChildItem -Path '.\' -Recurse -File | Unblock-File
 
