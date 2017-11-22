@@ -14,4 +14,4 @@ $adminUserName = 'AzureStackAdmin@azurestack.local'
 $adminPassword = 'Pa55w.rd' | ConvertTo-SecureString -Force -AsPlainText
 $adminCredentials = New-Object PSCredential($adminUserName,$adminPassword)
 
-Enter-PSSession -ComputerName $ipAddress -ConfigurationName -PrivilegedEndpoint -Credential $adminCredentials
+Enter-PSSession -ComputerName $ipAddress -ConfigurationName PrivilegedEndpoint -Credential $adminCredentials
